@@ -13,7 +13,22 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Enter the description of your project '
+        message: 'Enter the description of your project (motivation, why, what is solved, what did you learn?) '
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Enter installation instructions for your project '
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Enter the intended uses of your project '
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Enter the guidelines for contribution '
     },
     {
         type: 'list',
@@ -27,23 +42,8 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'usage',
-        message: 'Enter the intended uses of your project '
-    },
-    {
-        type: 'input',
-        name: 'installation',
-        message: 'Enter installation instructions for your project '
-    },
-    {
-        type: 'input',
         name: 'tests',
         message: 'Enter any test results '
-    },
-    {
-        type: 'input',
-        name: 'contributing',
-        message: 'Enter the guidelines for contribution '
     },
     {
         type: 'input',
@@ -58,7 +58,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve({
+                ok: true,
+                message: 'Success!'
+            });
+        });
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
