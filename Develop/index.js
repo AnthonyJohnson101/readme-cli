@@ -43,7 +43,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'tests',
+        name: 'test',
         message: 'Enter any test results '
     },
     {

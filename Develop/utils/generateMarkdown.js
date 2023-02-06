@@ -62,7 +62,7 @@ function generateMarkdown(data) {
   ###  [Contributors](#contributions)
   ###  [Tests](#test)
   ###  [License](#license)
-  ###  [Questions](#user)
+  ###  [Questions](#questions)
 
   ## Installation
   ${data.installation}
