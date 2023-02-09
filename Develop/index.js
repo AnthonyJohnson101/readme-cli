@@ -13,7 +13,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Enter the description of your project (motivation, why, what is solved, what did you learn?) '
+        message: 'Enter the description of your project (motivation, why, what is solved?) '
     },
     {
         type: 'input',
@@ -27,7 +27,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contributions',
+        name: 'contributors',
         message: 'Enter the github/linkedin link of contributors '
     },
     {
@@ -43,7 +43,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'test',
+        name: 'tests',
         message: 'Enter any test results '
     },
     {

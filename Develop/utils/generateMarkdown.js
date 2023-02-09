@@ -9,9 +9,9 @@ function renderLicenseBadge(license) {
   if (license == 'MIT') {
     badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
   } else if (license == 'Apache'){
-    badge = '[![License: GPL v3](https://img.shields.io/badge/License-Apache-yellow.svg)'
+    badge = '[![License: Apache](https://img.shields.io/badge/License-Apache-yellow.svg)'
   } else if (license == 'Mozilla'){
-    badge = '[![License](https://img.shields.io/badge/License-Mozilla-yellow.svg)'
+    badge = '[![License: Mozilla](https://img.shields.io/badge/License-Mozilla-yellow.svg)'
   } else{
     badge = ""
   }
@@ -59,8 +59,8 @@ function generateMarkdown(data) {
   ## Table of Contents
   ###  [Installation](#installation)
   ###  [Usage](#usage)
-  ###  [Contributors](#contributions)
-  ###  [Tests](#test)
+  ###  [Contributors](#contributors)
+  ###  [Tests](#tests)
   ###  [License](#license)
   ###  [Questions](#questions)
 
@@ -71,10 +71,10 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Contributors
-  ${data.contributions}
+  ${data.contributors}
 
-  ## Test Performed
-  ${data.test}
+  ## Tests
+  ${data.tests}
 
   ## License
   ## ${renderLicenseSection(data.license)}
