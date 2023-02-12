@@ -1,6 +1,6 @@
  # readme-cli
 
-  ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+  ## ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description 
   An easy to use CLI for simplifying the process of creating a new readme.
