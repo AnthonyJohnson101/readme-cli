@@ -7,11 +7,11 @@ const indexFile = require('../index');
 function renderLicenseBadge(license) {
   let badge = '';
   if (license == 'MIT') {
-    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
+    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
   } else if (license == 'Apache'){
-    badge = '[![License: Apache](https://img.shields.io/badge/License-Apache-yellow.svg)'
+    badge = '![License: Apache](https://img.shields.io/badge/License-Apache-yellow.svg)'
   } else if (license == 'Mozilla'){
-    badge = '[![License: Mozilla](https://img.shields.io/badge/License-Mozilla-yellow.svg)'
+    badge = '![License: Mozilla](https://img.shields.io/badge/License-Mozilla-yellow.svg)'
   } else{
     badge = ""
   }
